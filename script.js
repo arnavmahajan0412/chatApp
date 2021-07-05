@@ -50,19 +50,17 @@ $(window).on('keydown', function(e) {
 })
 
 var Fake = [
-    'Hi there, I\'m Jesse and you?',
+    'Hi there, I am a Bot and you?',
     'Nice to meet you',
     'How are you?',
     'Not too bad, thanks',
     'What do you do?',
     'That\'s awesome',
-    'Codepen is a nice place to stay',
     'I think you\'re a nice person',
     'Why do you think that?',
     'Can you explain?',
     'Anyway I\'ve gotta go now',
     'It was a pleasure chat with you',
-    'Time to make a new codepen',
     'Bye',
     ':)'
 ]
@@ -71,12 +69,12 @@ function fakeMessage() {
     if ($('.message-input').val() != '') {
         return false;
     }
-    $('<div class="message loading new"><figure class="avatar"><img src="http://askavenue.com/img/17.jpg" /></figure><span></span></div>').appendTo($('.mCSB_container'));
+    $('<div class="message loading new"><figure class="avatar"><img src="./Images/profile.jpg" /></figure><span></span></div>').appendTo($('.mCSB_container'));
     updateScrollbar();
 
     setTimeout(function() {
         $('.message.loading').remove();
-        $('<div class="message new"><figure class="avatar"><img src="http://askavenue.com/img/17.jpg" /></figure>' + Fake[i] + '</div>').appendTo($('.mCSB_container')).addClass('new');
+        $('<div class="message new"><figure class="avatar"><img src="./Images/profile.jpg" /></figure>' + Fake[i] + '</div>').appendTo($('.mCSB_container')).addClass('new');
         updateScrollbar();
         i++;
     }, 1000 + (Math.random() * 20) * 100);
