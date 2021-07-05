@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <input type="checkbox" id="click">
+    <label for="click">
+        <i class="fab fa-facebook-messenger"></i>
+        <i class="fas fa-times"></i>
+    </label>
+    <div class="wrapper" id="first">
+        <div class="head-text">IRIS </div>
+        <div class="chat-box">
+            <div class="desc-text">How may I help you?</div>
+            <form action="#">
+                <div class="field">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="field">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="field textarea">
+
+                    <changeit cols="30" rows="10" placeholder="Explain your queries.." required></changeit>
+                </div>
+                <div class="field">
+                    <button type="submit" onclick="show()">Start Chat</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <section class="avenue-messenger" id="second">
+
+        <div class="chat">
+            <div class="chat-title">
+                <h1>Username</h1>
+            </div>
+            <div class="messages">
+                <div class="messages-content"></div>
+            </div>
+            <div class="message-box">
+                <textarea type="text" class="message-input" placeholder="Type message..."></textarea>
+                <button type="submit" class="message-submit">Send</button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
